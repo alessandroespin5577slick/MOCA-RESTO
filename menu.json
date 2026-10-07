@@ -1,0 +1,95 @@
+{
+  "moneda": "$",
+  "nota": "Precios en dólares, incluyen IVA. Datos de ejemplo: edita este archivo para cambiar platos y precios.",
+  "categorias": [
+    {
+      "id": "cafes",
+      "nombre": "Cafés de especialidad",
+      "descripcion": "Granos de altura de Intag e Imbabura, tostados en casa.",
+      "platos": [
+        { "nombre": "Espresso", "descripcion": "Corto, intenso y aromático.", "precio": 1.75 },
+        { "nombre": "Americano", "descripcion": "Espresso alargado con agua caliente.", "precio": 2.00 },
+        { "nombre": "Capuchino", "descripcion": "Espresso, leche vaporizada y espuma cremosa.", "precio": 2.75 },
+        { "nombre": "Moca de la casa", "descripcion": "Espresso, chocolate de Esmeraldas y leche cremada.", "precio": 3.25, "destacado": true },
+        { "nombre": "Café pasado en chuspa", "descripcion": "Como en casa de la abuela, servido en jarro de barro.", "precio": 2.25 }
+      ]
+    },
+    {
+      "id": "bebidas-calientes",
+      "nombre": "Bebidas calientes",
+      "descripcion": "Para las tardes frías al pie del Imbabura.",
+      "platos": [
+        { "nombre": "Chocolate caliente", "descripcion": "Cacao nacional fino de aroma con canela.", "precio": 2.75 },
+        { "nombre": "Aguita de hierbas", "descripcion": "Cedrón, hierbaluisa y manzanilla de la huerta.", "precio": 1.50, "etiquetas": ["vegano"] },
+        { "nombre": "Canelazo (sin alcohol)", "descripcion": "Naranjilla, canela y panela.", "precio": 2.50, "etiquetas": ["vegano"] },
+        { "nombre": "Chai latte", "descripcion": "Especias, té negro y leche espumada.", "precio": 3.00 }
+      ]
+    },
+    {
+      "id": "jugos",
+      "nombre": "Jugos y bebidas frías",
+      "descripcion": "Fruta fresca del mercado de Otavalo.",
+      "platos": [
+        { "nombre": "Jugo natural", "descripcion": "Mora, naranjilla, tomate de árbol o maracuyá.", "precio": 2.25, "etiquetas": ["vegano"] },
+        { "nombre": "Batido de frutas", "descripcion": "Con leche o yogur natural.", "precio": 2.75 },
+        { "nombre": "Café frío", "descripcion": "Cold brew de 18 horas con hielo.", "precio": 3.00 },
+        { "nombre": "Limonada de hierbabuena", "descripcion": "Refrescante y poco dulce.", "precio": 2.00, "etiquetas": ["vegano"] }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "nombre": "Desayunos",
+      "descripcion": "Servidos hasta las 11:30. Incluyen café o jugo.",
+      "platos": [
+        { "nombre": "Desayuno andino", "descripcion": "Mote pillo, queso fresco, pan de casa y café.", "precio": 5.50, "destacado": true },
+        { "nombre": "Desayuno americano", "descripcion": "Huevos al gusto, tocino, tostadas y mermelada.", "precio": 5.00 },
+        { "nombre": "Bolón de verde", "descripcion": "Con queso o chicharrón, y huevo frito.", "precio": 4.50 },
+        { "nombre": "Bowl de granola", "descripcion": "Yogur, granola casera, frutas y miel de abeja.", "precio": 4.25, "etiquetas": ["vegetariano"] }
+      ]
+    },
+    {
+      "id": "sanduches",
+      "nombre": "Sánduches y bocaditos",
+      "descripcion": "En pan artesanal horneado cada mañana.",
+      "platos": [
+        { "nombre": "Sánduche de pernil", "descripcion": "Pernil horneado, curtido de cebolla y ají.", "precio": 4.75 },
+        { "nombre": "Sánduche caprese", "descripcion": "Tomate, mozzarella, albahaca y pesto.", "precio": 4.25, "etiquetas": ["vegetariano"] },
+        { "nombre": "Empanadas de viento", "descripcion": "Dos unidades, con azúcar espolvoreada.", "precio": 2.50, "etiquetas": ["vegetariano"] },
+        { "nombre": "Humitas", "descripcion": "Dos unidades, de choclo tierno con queso.", "precio": 3.00, "etiquetas": ["vegetariano"] }
+      ]
+    },
+    {
+      "id": "tipicos",
+      "nombre": "Platos típicos",
+      "descripcion": "Sabores de Imbabura y de la Sierra ecuatoriana.",
+      "platos": [
+        { "nombre": "Fritada con mote", "descripcion": "Con maduro, tostado, llapingachos y curtido.", "precio": 8.50, "destacado": true },
+        { "nombre": "Locro de papa", "descripcion": "Con queso, aguacate y chulpi.", "precio": 4.50, "etiquetas": ["vegetariano"] },
+        { "nombre": "Seco de pollo", "descripcion": "Con arroz, maduro y ensalada.", "precio": 7.00 },
+        { "nombre": "Yaguarlocro", "descripcion": "Sopa tradicional de papa y menudencias (solo domingos).", "precio": 6.00 }
+      ]
+    },
+    {
+      "id": "platos-fuertes",
+      "nombre": "Platos fuertes",
+      "descripcion": "Cocina de autor con productos locales.",
+      "platos": [
+        { "nombre": "Trucha de San Pablo", "descripcion": "A la plancha, con papas nativas y salsa de alcaparras.", "precio": 9.50 },
+        { "nombre": "Lomo a la pimienta", "descripcion": "Con puré rústico y vegetales salteados.", "precio": 11.00 },
+        { "nombre": "Risotto de quinua", "descripcion": "Quinua cremosa con hongos y queso maduro.", "precio": 8.00, "etiquetas": ["vegetariano"] },
+        { "nombre": "Pasta de la casa", "descripcion": "Tallarines con salsa pomodoro o alfredo.", "precio": 7.50, "etiquetas": ["vegetariano"] }
+      ]
+    },
+    {
+      "id": "postres",
+      "nombre": "Postres",
+      "descripcion": "Dulces caseros para acompañar tu café.",
+      "platos": [
+        { "nombre": "Torta de chocolate", "descripcion": "Húmeda, con ganache de cacao 70 %.", "precio": 3.50, "destacado": true },
+        { "nombre": "Higos con queso", "descripcion": "Higos en almíbar de panela con queso fresco.", "precio": 3.00, "etiquetas": ["vegetariano"] },
+        { "nombre": "Cheesecake de mora", "descripcion": "Base de galleta y coulis de mora andina.", "precio": 3.75 },
+        { "nombre": "Pristiños con miel", "descripcion": "Receta tradicional con miel de panela.", "precio": 2.75, "etiquetas": ["vegetariano"], "disponible": false }
+      ]
+    }
+  ]
+}
