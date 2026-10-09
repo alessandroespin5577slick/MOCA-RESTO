@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moca &amp; Resto · Café y restaurante en Otavalo</title>
+  <meta name="description" content="Moca & Resto: café de especialidad y cocina andina cerca de Otavalo, Imbabura, Ecuador. Menú, horarios, ubicación y reservas por WhatsApp.">
+  <meta name="theme-color" content="#3b2a1e">
+
+  <meta property="og:title" content="Moca &amp; Resto">
+  <meta property="og:description" content="Café de especialidad y cocina andina cerca de Otavalo, Ecuador.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu">Saltar al menú</a>
+
+  <!-- ===== Encabezado / navegación ===== -->
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Moca &amp; Resto, inicio">
+      <span class="brand__name">Moca <span class="amp">&amp;</span> Resto</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Inicio ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero__photo" role="img" aria-label="Taza de café sobre una mesa de madera"></div>
+      <div class="hero__content">
+        <p class="hero__est">Desde 2019 · Otavalo</p>
+        <h1 class="hero__title">Moca <span class="amp">&amp;</span> Resto</h1>
+        <p class="hero__tagline">Café de altura y cocina andina<br>al pie del Taita Imbabura</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#menu">Ver el menú</a>
+          <a class="btn btn--ghost js-whatsapp" href="#" target="_blank" rel="noopener">Reservar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Bienvenida ===== -->
+    <section class="intro paper">
+      <div class="ornament" aria-hidden="true">✦ ❦ ✦</div>
+      <p class="intro__text">
+        Un rincón tranquilo a pocos minutos de la Plaza de los Ponchos.
+        Tostamos nuestro propio café, horneamos el pan cada mañana y
+        cocinamos con productos de los mercados y comunidades de Imbabura.
+      </p>
+    </section>
+
+    <!-- ===== Menú ===== -->
+    <section id="menu" class="menu paper">
+      <header class="section-head">
+        <p class="section-head__kicker">La carta</p>
+        <h2>Nuestro menú</h2>
+        <div class="rule" aria-hidden="true"></div>
+      </header>
+
+      <nav class="menu-tabs" aria-label="Categorías del menú">
+        <ul id="menu-tabs" class="menu-tabs__list"></ul>
+      </nav>
+
+      <div id="menu-content" class="menu-content" aria-live="polite">
+        <p class="menu-loading">Cargando menú…</p>
+      </div>
+
+      <p id="menu-note" class="menu-note"></p>
+    </section>
+
+    <!-- ===== Horarios ===== -->
+    <section id="horarios" class="hours paper">
+      <header class="section-head">
+        <p class="section-head__kicker">Te esperamos</p>
+        <h2>Horarios</h2>
+        <div class="rule" aria-hidden="true"></div>
+      </header>
+
+      <p id="open-status" class="open-status" hidden></p>
+
+      <!-- Cambia los horarios aquí. data-open / data-close en formato 24 h (HH:MM).
+           Para un día cerrado, deja data-open="" y escribe "Cerrado". -->
+      <table class="hours__table">
+        <tbody>
+          <tr data-day="1" data-open="08:00" data-close="21:00"><th scope="row">Lunes</th><td>8:00 – 21:00</td></tr>
+          <tr data-day="2" data-open="" data-close=""><th scope="row">Martes</th><td>Cerrado</td></tr>
+          <tr data-day="3" data-open="08:00" data-close="21:00"><th scope="row">Miércoles</th><td>8:00 – 21:00</td></tr>
+          <tr data-day="4" data-open="08:00" data-close="21:00"><th scope="row">Jueves</th><td>8:00 – 21:00</td></tr>
+          <tr data-day="5" data-open="08:00" data-close="22:00"><th scope="row">Viernes</th><td>8:00 – 22:00</td></tr>
+          <tr data-day="6" data-open="07:30" data-close="22:00"><th scope="row">Sábado</th><td>7:30 – 22:00</td></tr>
+          <tr data-day="0" data-open="07:30" data-close="18:00"><th scope="row">Domingo</th><td>7:30 – 18:00</td></tr>
+        </tbody>
+      </table>
+      <p class="hours__note">Los sábados abrimos temprano por la feria de Otavalo.</p>
+    </section>
+
+    <!-- ===== Ubicación ===== -->
+    <section id="ubicacion" class="location paper">
+      <header class="section-head">
+        <p class="section-head__kicker">Cómo llegar</p>
+        <h2>Ubicación</h2>
+        <div class="rule" aria-hidden="true"></div>
+      </header>
+
+      <address class="location__address">
+        Vía a la Laguna de Mojanda, km 2<br>
+        Otavalo, Imbabura · Ecuador
+      </address>
+
+      <div class="map-frame">
+        <!-- Cambia "q=" por tu dirección o coordenadas (ej. q=0.2341,-78.2618) -->
+        <iframe
+          title="Mapa de ubicación de Moca &amp; Resto"
+          src="https://www.google.com/maps?q=Otavalo,+Imbabura,+Ecuador&z=14&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="location__actions">
+        <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=Otavalo,+Imbabura,+Ecuador" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn--ghost js-whatsapp" href="#" target="_blank" rel="noopener">Escríbenos</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="site-footer">
+    <p class="site-footer__brand">Moca <span class="amp">&amp;</span> Resto</p>
+    <p>Café · Cocina andina · Repostería</p>
+    <p>
+      <a href="tel:+593990000000">+593 99 000 0000</a> ·
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </p>
+    <p class="site-footer__small">© <span id="year">2026</span> Moca &amp; Resto · Otavalo, Ecuador</p>
+  </footer>
+
+  <!-- ===== Botón flotante de WhatsApp ===== -->
+  <a class="whatsapp-float js-whatsapp" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.9 4.8-10.6 10.7-10.6s10.7 4.8 10.7 10.6-4.8 10.6-10.7 10.6zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.4c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/>
+    </svg>
+    <span class="whatsapp-float__label">WhatsApp</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
